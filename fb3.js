@@ -57,7 +57,7 @@ function checkInputs() {
     else {
       return setErrorFor(
         password,
-        'NOt a strong Password'
+        'Not a strong Password'
       );
     }
 	
