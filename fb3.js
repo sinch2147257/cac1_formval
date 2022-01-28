@@ -16,7 +16,16 @@ function checkInputs() {
 	const emailValue = email.value.trim();
 	const passwordValue = password.value.trim();
 	const password2Value = password2.value.trim();
-	
+	let passwordVal = password.value.trim();
+    let passwordRegex1 = /[a-z]/;
+    let passwordRegex2 = /[A-Z]/;
+    let passwordRegex3 = /[0-9]/;
+    let passwordRegex4 = /[~`!@#$%^&*;:"<>,./?]/;
+    let passwordRegex5 = /[-_+={}]/;
+    let passwordRegex6 = /[(){}|]/;
+    let passwordRegex7 = /[/]/;
+    let passwordRegex8 = /[\[\]]/;
+  
 	if(usernameValue === '') {
 		setErrorFor(username, 'Username cannot be blank');
 	} else {
@@ -33,9 +42,24 @@ function checkInputs() {
 	
 	if(passwordValue === '') {
 		setErrorFor(password, 'Password cannot be blank');
-	} else {
-		setSuccessFor(password);
-	}
+	} 
+    else if (
+      passwordRegex1.test(passwordVal) &&
+      passwordRegex2.test(passwordVal) &&
+      passwordRegex3.test(passwordVal) &&
+      (passwordRegex4.test(passwordVal) ||
+        passwordRegex5.test(passwordVal) ||
+        passwordRegex6.test(passwordVal) ||
+        passwordRegex7.test(passwordVal) ||
+        passwordRegex8.test(passwordVal))
+    )
+      return setSuccessFor(password);
+    else {
+      return setErrorFor(
+        password,
+        'NOt a strong Password'
+      );
+    }
 	
 	
 }
