@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="fb1.css">
+        
+        <title>CHRIST UNIVERSITY</title>
+    <body>
+       
+        <div class="container">
+            <div class="header">
+                <h2>Feedback Form</h2>
+            </div>
+            <form id="form" class="form">
+                <div class="form-control">
+                    <label for="username">Name</label>
+                    <input type="text" onkeypress="return  lockkb(event)" placeholder="Enter Name:" id="username" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Email</label>
+                    <input type="email" placeholder="Enter Email:" id="email" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Password</label>
+                    
+                    <input type="password" 
+                    onkeyup="checkPassword()"
+                    placeholder="Enter Password:" 
+                    id="password"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Address</label>
+                    <input type="password" placeholder="Enter Address:" id="password2"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small><br>
+                </div> 
+            <h3><p style="font-family:sans-serif;"> what they liked most about the campus:</p>
+            </h3>
+                    <div>
+                      <input type="checkbox" id="scales" name="scales"
+                             checked>
+                      <label for="scales">Student</label>
+                    </div>
+                    
+                    <div>
+                      <input type="checkbox" id="horns" name="horns">
+                      <label for="horns">location</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">campus</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">Atmosphere</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">Dorm Rooms</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">Sports</label>
+                      </div>
+
+                    <h3><p> How they became interested in the university :</p>
+                    </h3>
+                    <div>
+                      <input type="radio" id="scales" name="scales"
+                             checked>
+                      <label for="scales">Friends</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" id="horns" name="horns">
+                      <label for="horns">Telivision</label>
+                    </div>
+                    
+
+                    <div>
+                        <input type="radio" id="horns" name="horns">
+                        <label for="horns">Internet</label>
+                      </div>
+
+                      <div>
+                        <input type="radio" id="horns" name="horns">
+                        <label for="horns">Other</label>
+                      </div>
+
+                      <h3><p>Additional Comments:</p> </h3>
+                      <div class="input-group mb-5">
+                        <textarea
+                          class="form-control"
+                          placeholder="Comments (min 20 characters but optional)"
+                          id="comment"
+                        ></textarea>
+                      </div>
+
+                <button>Submit</button>
+                <button onClick="window.location.reload();">Reset</button>
+            </form>
+        </div>
+ </div>
+        
+        
+        <!-- SOCIAL PANEL HTML -->
+        <div class="social-panel-container">
+            <div class="social-panel">
+                <p>CHRIST UNIVERSITY<i class="fa fa-heart"></i> Author:
+                    <a target="_blank" href="https://florin-pop.com">Adarsh verma</a></p>
+                <button class="close-btn"><i class="fas fa-times"></i></button>
+                <h4>Get in touch on</h4>
+                <ul>
+                    <li>
+                        <a href="" target="_blank">
+                            <i class="fab fa-christ"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.christuniversity.in/" target="_blank">
+                            <i class="fab fa-christ"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.christuniversity.in/" target="_blank">
+                            <i class="fab fa-christ"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.christuniversity.in/" target="_blank">
+                            <i class="fab fa-christ"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.christuniversity.in/" target="_blank">
+                            <i class="fab fa-christ"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="floating-btn">
+            Get in Touch
+        </button>
+        
+        <div class="floating-text">
+            Click here <a href="https://www.christuniversity.in/" target="_blank">#TakeMeToChrist</a>
+        </div>
+        </div>
+        <script src="fb3.js"></script>
+    </body>
+</html>
